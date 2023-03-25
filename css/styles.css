@@ -474,8 +474,8 @@ to underline an element on hover if the underline indicates the current page */
   background-color: var(--cloud-light-color);
   border: 1px solid var(--cornflower-accent-color);
   color: var(--iris-brand-color);
-  transition: color var(--animation-delay) var(--animation-func)
-      var(--animation-delay),
+  transition: background-color var(--animation-delay) var(--animation-func),
+    color var(--animation-delay) var(--animation-func),
     border var(--animation-delay) var(--animation-func),
     box-shadow var(--animation-delay) var(--animation-func);
 }
@@ -532,9 +532,7 @@ to underline an element on hover if the underline indicates the current page */
 
 .example-text {
   display: block;
-  opacity: 0;
-  transition: opacity var(--animation-delay) var(--animation-func)
-    var(--animation-delay);
+
   color: var(--cloud-light-color);
 }
 
@@ -554,12 +552,6 @@ to underline an element on hover if the underline indicates the current page */
 .example-link:focus .example-overlay,
 .example-link:active .example-overlay {
   transform: translateY(0);
-}
-
-.example-link:hover .example-text,
-.example-link:focus .example-text,
-.example-link:active .example-text {
-  opacity: 1;
 }
 
 /* --- Modal window ---  */
@@ -604,7 +596,7 @@ to underline an element on hover if the underline indicates the current page */
   border-radius: 50%;
   color: var(--navyblue-dark-color);
   transition: background-color var(--animation-delay) var(--animation-func),
-    color var(--animation-delay) var(--animation-func) var(--animation-delay);
+    color var(--animation-delay) var(--animation-func);
 }
 
 .modal-button {
