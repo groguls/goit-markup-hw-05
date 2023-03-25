@@ -525,17 +525,14 @@ to underline an element on hover if the underline indicates the current page */
   transform: translateY(100%);
   width: 100%;
   height: 100%;
+  padding: 40px 32px;
   transition: transform var(--animation-delay) var(--animation-func);
   background-color: var(--iris-brand-color);
 }
 
 .example-text {
   display: block;
-  position: absolute;
-  top: 40px;
-  left: 32px;
   opacity: 0;
-  width: 296px;
   transition: opacity var(--animation-delay) var(--animation-func)
     var(--animation-delay);
   color: var(--cloud-light-color);
