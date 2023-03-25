@@ -586,6 +586,10 @@ to underline an element on hover if the underline indicates the current page */
   min-height: 576px;
   background: var(--dairy-modal-color);
   border-radius: 4px;
+  opacity: 1;
+  scale: 1;
+  transition: scale var(--animation-delay) var(--animation-func),
+    opacity var(--animation-delay) var(--animation-func);
 }
 
 .close-button {
@@ -621,4 +625,9 @@ to underline an element on hover if the underline indicates the current page */
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
+}
+
+.is-hidden .modal {
+  opacity: 0;
+  scale: 0;
 }
